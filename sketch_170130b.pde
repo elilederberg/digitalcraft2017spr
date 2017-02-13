@@ -1,3 +1,5 @@
+float a = 1;
+
 void setup() {
 size(1250,800);
 
@@ -123,4 +125,29 @@ line(mouseX+1050,mouseY+460,mouseX+1050,mouseY+510);
 line(mouseX+1020,mouseY+485,mouseX+1050,mouseY+485);
 line(mouseX+1190,mouseY+460,mouseX+1190,mouseY+510);
 line(mouseX+1190,mouseY+510,mouseX+1220,mouseY+510);
+ if (mousePressed == true) {
+    a = a +5;
+
+  } else {
+    fill(0); // Black
+  }
+  stroke(0,0,0);
+  fill(#fde927);
+rect(300+a,640,200,100);
+quad(220+a,680,300+a,640,300+a,740,220+a,740);
+quad(500+a,640,580+a,680,580+a,740,500+a,740);
+quad(300+a,640,320+a,600,480+a,600,500+a,640);
+fill(#000000);
+ellipse(300+a,740,70,70);
+ellipse(500+a,740,70,70);
+fill(#fde5c0);
+rect(390+a,580,40,20);
+fill(#cceff9);
+rect(330+a,610,50,60);
+rect(420+a,610,50,60);
+fill(#ffffff);
+rect(220+a,680,360,20);
+rect(570+a,705,10,20);
+fill(#df0a25);
+rect(220+a,705,10,20);
 }
